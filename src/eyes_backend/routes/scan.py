@@ -5,16 +5,16 @@ router: APIRouter = APIRouter(
     tags=["scan"]
 )
 
-@router.get("/scan/ping")
-async def ping():
+@router.get("/ping")
+async def ping() -> dict[str, object]:
     return {
         "target": "192.168.1.1",
         "is_alive": True,
         "rtt_ms": 1.2
     }
 
-@router.get("/scan/ports")
-async def scan_ports():
+@router.get("/ports")
+async def scan_ports() -> dict[str, object]:
     return {
         "target": "192.168.1.1",
         "open_ports": [22, 80, 443],
@@ -22,8 +22,8 @@ async def scan_ports():
         "scan_duration_ms": 850
     }
 
-@router.get("/scan/subnet")
-async def scan_subnet():
+@router.get("/subnet")
+async def scan_subnet() -> dict[str, object]:
     return {
         "subnet": "192.168.1.0/24",
         "hosts_found": 3,
@@ -34,8 +34,8 @@ async def scan_subnet():
         ]
     }
 
-@router.get("/scan/dns")
-async def dns_lookup():
+@router.get("/dns")
+async def dns_lookup() -> dict[str, object]:
     return {
         "domain": "example.com",
         "a_records": ["93.184.216.34"],
@@ -43,8 +43,8 @@ async def dns_lookup():
         "ns_records": ["ns1.example.com", "ns2.example.com"]
     }
 
-@router.get("/scan/traceroute")
-async def traceroute():
+@router.get("/traceroute")
+async def traceroute() -> dict[str, object]:
     return {
         "target": "8.8.8.8",
         "hops": [

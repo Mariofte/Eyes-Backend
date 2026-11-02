@@ -1,0 +1,8 @@
+20:54:13 INFO     uvicorn.error: Started server process [18884]
+20:54:13 INFO     uvicorn.error: Waiting for application startup.
+20:54:13 INFO     uvicorn.error: Application startup complete.
+20:54:13 INFO     uvicorn.error: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+20:58:32 INFO     uvicorn.error: Shutting down
+20:58:33 INFO     uvicorn.error: Waiting for application shutdown.
+20:58:33 INFO     uvicorn.error: Application shutdown complete.
+20:58:33 INFO     uvicorn.error: Finished server process [18884]

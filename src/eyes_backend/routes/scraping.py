@@ -5,7 +5,7 @@ router: APIRouter = APIRouter(
     tags=["scraping"],
 )
 
-@router.get("/scraping/check-url")
+@router.get("/check-url")
 async def check_url() -> dict[str, object]:
     return {
         "url": "https://example.com",
@@ -14,7 +14,7 @@ async def check_url() -> dict[str, object]:
         "response_time_ms": 142
     }
     
-@router.get("/scraping/fetch")
+@router.get("/fetch")
 async def fetch() -> dict[str, object]:
     return {
         "url": "https://example.com",
@@ -23,7 +23,7 @@ async def fetch() -> dict[str, object]:
         "response_time_ms": 142
     }
 
-@router.get("/scraping/extract")
+@router.get("/extract")
 async def extract() -> dict[str, object]:
     return {
         "source": "https://example.com",
@@ -34,7 +34,7 @@ async def extract() -> dict[str, object]:
         }
     }
 
-@router.get("/scraping/batch")
+@router.get("/batch")
 async def batch_scrape() -> dict[str, object]:
     return {
         "urls_processed": 5,

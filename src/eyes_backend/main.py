@@ -1,21 +1,15 @@
 import uvicorn
-from fastapi import FastAPI
-from eyes_backend.routes import scraping_router, scan_router
+from eyes_backend.log_config import get_log_config
 from eyes_backend.settings import get_settings
 
-app = FastAPI(
-    title=get_settings().name,
-    debug=get_settings().debug,
-    version=get_settings().version
-    
-)
-app.include_router(scraping_router)
-app.include_router(scan_router)
-
 def main():
+    settings = get_settings()
+    # main.py
     uvicorn.run(
-        "eyes_backend.main:app",
-        host=get_settings().host,
-        port=get_settings().port,
-        reload=True
+        "eyes_backend.api:app",
+        host=settings.host,
+        port=settings.port,
+        reload=settings.debug,
+        log_config=get_log_config(debug=settings.debug),
+        access_log=False,  # evita líneas duplicadas
     )

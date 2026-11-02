@@ -1,0 +1,26 @@
+2026-11-01 21:44:48 INFO     uvicorn.error: Started server process [16088]
+2026-11-01 21:44:48 INFO     uvicorn.error: Waiting for application startup.
+2026-11-01 21:44:48 INFO     uvicorn.error: Application startup complete.
+2026-11-01 21:44:48 INFO     uvicorn.error: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-11-01 21:46:56 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (3.0 ms)
+2026-11-01 21:46:58 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.4 ms)
+2026-11-01 21:47:20 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.3 ms)
+2026-11-01 21:47:21 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.4 ms)
+2026-11-01 21:47:21 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.4 ms)
+2026-11-01 21:47:21 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.3 ms)
+2026-11-01 21:47:21 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.3 ms)
+2026-11-01 21:47:21 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.4 ms)
+2026-11-01 21:47:22 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.3 ms)
+2026-11-01 21:47:22 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.3 ms)
+2026-11-01 21:47:22 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.3 ms)
+2026-11-01 21:47:23 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.3 ms)
+2026-11-01 21:47:23 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.4 ms)
+2026-11-01 21:47:23 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.3 ms)
+2026-11-01 21:51:29 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.4 ms)
+2026-11-01 21:53:09 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.5 ms)
+2026-11-01 21:53:16 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (1.1 ms)
+2026-11-01 21:53:17 INFO     eyes_backend.requests: GET /scraping/check-url -> 200 (0.4 ms)
+2026-11-01 21:54:07 INFO     uvicorn.error: Shutting down
+2026-11-01 21:54:07 INFO     uvicorn.error: Waiting for application shutdown.
+2026-11-01 21:54:07 INFO     uvicorn.error: Application shutdown complete.
+2026-11-01 21:54:07 INFO     uvicorn.error: Finished server process [16088]
